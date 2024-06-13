@@ -192,6 +192,7 @@ clearAll.addEventListener('click', (e) => {
 
     data = data.filter((item) => item.completed_at === null);
     updateList();
+    getTodo();
   })
 })
 
