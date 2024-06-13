@@ -1,1 +1,1 @@
-login&logout&todoList with axios
+Register&login&logout&todoList with axios
