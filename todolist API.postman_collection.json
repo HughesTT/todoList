@@ -1,0 +1,128 @@
+{
+	"info": {
+		"_postman_id": "1b6f6e50-8d68-4633-9b6e-39f00bd51a96",
+		"name": "todolist API",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "35382519"
+	},
+	"item": [
+		{
+			"name": "註冊功能",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"user\": {\r\n        \"email\": \"rs3@audi.com.tw\",\r\n        \"nickname\": \"rs3\",\r\n        \"password\": \"audirs3\"\r\n    }\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://todoo.5xcamp.us/users",
+					"protocol": "https",
+					"host": [
+						"todoo",
+						"5xcamp",
+						"us"
+					],
+					"path": [
+						"users"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "登入功能",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"user\":{\r\n        \"email\":\"leader@nv.com.tw\",\r\n        \"password\":\"audirs6\"\r\n    }\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://todoo.5xcamp.us/users/sign_in",
+					"protocol": "https",
+					"host": [
+						"todoo",
+						"5xcamp",
+						"us"
+					],
+					"path": [
+						"users",
+						"sign_in"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "取得todo",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiI2ODU4Iiwic2NwIjoidXNlciIsImF1ZCI6bnVsbCwiaWF0IjoxNzE3MTQ1Mzc5LCJleHAiOjE3MTg0NDEzNzksImp0aSI6IjQzYzFiMDg1LTJlYWQtNDY0ZS1hMzc3LWIwMzk5MTI4NTM1ZSJ9.Motx89M0I9ffhTq8UZ23BYM0X1Z8MImsQmC8MK0ZDvU"
+					}
+				],
+				"url": {
+					"raw": "https://todoo.5xcamp.us/todos",
+					"protocol": "https",
+					"host": [
+						"todoo",
+						"5xcamp",
+						"us"
+					],
+					"path": [
+						"todos"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "新增todo",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiI2ODU4Iiwic2NwIjoidXNlciIsImF1ZCI6bnVsbCwiaWF0IjoxNzE3MTQ1Mzc5LCJleHAiOjE3MTg0NDEzNzksImp0aSI6IjQzYzFiMDg1LTJlYWQtNDY0ZS1hMzc3LWIwMzk5MTI4NTM1ZSJ9.Motx89M0I9ffhTq8UZ23BYM0X1Z8MImsQmC8MK0ZDvU"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"todo\": {\r\n    \"content\": \"今天是5月最後一天\"\r\n  }\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://todoo.5xcamp.us/todos",
+					"protocol": "https",
+					"host": [
+						"todoo",
+						"5xcamp",
+						"us"
+					],
+					"path": [
+						"todos"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
